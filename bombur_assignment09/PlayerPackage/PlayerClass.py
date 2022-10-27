@@ -36,4 +36,7 @@ class Player():
     # Add total runs made a player once a game is complete.
     def newRun (self, x):
         self.runs += x
-        return str(x) + " runs logged. " + "Runs now = " + str(self.runs)
+        return self.name + " has " + str(x) + " runs logged. " + "Runs now = " + str(self.runs)
+    
+    def getPlayer(self):
+        print(self.__repr__())
